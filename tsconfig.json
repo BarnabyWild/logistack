@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@logistack/db": ["./packages/db/src/index.ts"],
+      "@logistack/db/*": ["./packages/db/src/*"],
+      "@logistack/shared": ["./packages/shared/src/index.ts"],
+      "@logistack/shared/*": ["./packages/shared/src/*"],
+      "@logistack/auth": ["./packages/auth/src/index.ts"],
+      "@logistack/auth/*": ["./packages/auth/src/*"],
+      "@logistack/ui": ["./packages/ui/src/index.ts"],
+      "@logistack/ui/*": ["./packages/ui/src/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next",
+    "build",
+    "coverage"
+  ]
+}
